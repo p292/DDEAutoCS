@@ -13,10 +13,10 @@ As an example for the word errors pop up I've used a fake 'Symantec Decryption M
 
 # Pictures (worth 1000 words)
 Workflow in Cobaltstrike:
-![Alt text](https://github.com/p292/DDEAutoCS/master/img/Git.png?raw=true "CS Workflow")
+![alt text](https://raw.githubusercontent.com/p292/DDEAutoCS/master/img/Git.png)
 
 What users see in word (rememeber this only works when protected mode has been enabled...)
-![Alt text](https://github.com/p292/DDEAutoCS/master/img/Git2.png?raw=true "Word Workflow")
+![alt text](https://raw.githubusercontent.com/p292/DDEAutoCS/master/img/Git2.png)
 
 Thanks!
 Matt
